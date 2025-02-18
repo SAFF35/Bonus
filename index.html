@@ -95,7 +95,6 @@
       margin: 1px auto;
     }
 
-    /* Ditambahkan: text-align: center agar kotak dan tombol berada di tengah container */
     .content {
       max-width: 90%;
       margin: 30px auto;
@@ -109,7 +108,6 @@
       text-align: center;
     }
 
-    /* Override paragraf di dalam container agar tetap rata kiri */
     .content p {
       margin: 10px 0;
       padding: 0 10px;
@@ -135,15 +133,17 @@
       color: #000;
     }
 
-    /* Tombol: tidak terlalu lebar, posisinya di tengah, dengan animasi blink */
+    /* Tombol: tidak terlalu lebar, posisinya di tengah, dengan animasi blink.
+       Hanya perubahan: tombol diatur sebagai block dengan lebar sesuai isi teks agar selalu berada di tengah. */
     .button {
-      display: inline-block;
+      display: block;
+      width: fit-content;
       padding: 7px 12px;
       margin: 5px auto;
       color: #000;
       text-decoration: none;
       border: 2px solid #87CEEB;
-      border-radius: 13px;
+      border-radius: 6px;
       text-align: center;
       animation: blink 2s infinite;
     }
@@ -198,12 +198,11 @@
   <img class="logo-small" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/20250113_192723.png?w=768" alt="Logo Smart Affiliate Future">
   <br>
   <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241128_204611.png?w=768" alt="Platform SAF">
-
+   <br>
   <!-- Konten tambahan: Informasi Pencairan Komisi & Bonus serta Bonus Detail -->
   <div class="content">
       <p>Untuk Pencairan Komisi dan Penarikan Bonus bisa melalui Rekening Bank atau Ewallet (Dana, Ovo, Shopee Pay dll) dan bagi yang belum memilikinya bisa melalui Rekening Bank atau Ewallet teman/saudara atau melalui konter yang menerima transfer &amp; pencairan.</p>
-      <br>
-    
+      
     <h3 style="text-align: center;">❇️ BONUS SPESIAL</h3>
     <div class="bonus-box">
       <b>Bonus Spesial 1</b>
@@ -253,13 +252,10 @@
     <p>❌️ Jika Anda telah melewati batas promo 3 hari namun ingin mendapatkan semua Bonus Cuma-cuma, bonus dapat dibeli dengan harga diskon Rp 50.000,- (tanpa Ebook) dalam promo 10 hari. Setelah 10 hari, harga menjadi standar (tetap ada diskon Rp 499.000,-). Klik tombol di bawah ini:</p>
     <p><a href="https://Wa.me/6289522704503?text=Hallo%20Admin%20SAFF%20saya%20ingin%20membeli%20Bonus%20Cuma-cuma%20harga%20diskon%20Rp%2050.000,-%20sebelum%2010%20hari.%20Bagaimana%20caranya?" class="button">👉 BELI BONUS CUMA-CUMA</a></p>
   </div>
-  <br>
     <a href="https://SAFF35.github.io/Dashboard" class="button"><b>KEMBALI KE HOME</b></a>
   <!-- Footer -->
-
   <h4 class="footer-h4"><b>Raih impian Anda menuju kebebasan finansial dan kesejahteraan dengan passive income.</b></h4>
   <h4 class="footer-h4"><b>Salam sukses untuk semuanya.</b></h4>
-  
   <br>
   <h4>__________________</h4>
 </body>
