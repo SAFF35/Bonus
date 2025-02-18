@@ -38,7 +38,6 @@
       gap: 10px;
       background: linear-gradient(to bottom, #84D1CC, #20B2AA);
       padding: 2px;
-      /* Menghilangkan border */
       border: none;
       position: sticky;
       top: 61px;
@@ -133,7 +132,7 @@
       color: #000;
     }
 
-    /* Tombol: tidak terlalu lebar, menyesuaikan isi teks, di tengah, dan animasi berkedip */
+    /* Tombol: tidak terlalu lebar, posisinya di tengah, dengan animasi blink */
     .button {
       display: inline-block;
       padding: 7px 12px;
@@ -147,10 +146,22 @@
     }
 
     @keyframes blink {
-      0% { background-color: #800080; }   /* Ungu */
-      33% { background-color: #0000FF; }   /* Biru */
-      66% { background-color: #008000; }   /* Hijau */
-      100% { background-color: #800080; }  /* Kembali ke Ungu */
+      0% { background-color: #EE82EE; }   /* Ungu cerah */
+      33% { background-color: #00FF00; }   /* Hijau cerah */
+      66% { background-color: #1E90FF; }   /* Biru langit cerah */
+      100% { background-color: #EE82EE; }
+    }
+
+    /* Untuk kotak bonus, gunakan display: inline-block agar lebar sesuai isi teks */
+    .bonus-box {
+      border: 2px solid #1E90FF;
+      padding: 7px;
+      margin: 0 auto;
+      text-align: center;
+      color: #000;
+      background: linear-gradient(90deg, #87CEEB, #ffffff);
+      border-radius: 10px;
+      display: inline-block;
     }
 
     /* Style tambahan untuk h4 footer agar tidak rapat dengan pinggir layar */
@@ -191,40 +202,40 @@
       <br>
     
     <h3 style="text-align: center;">❇️ BONUS SPESIAL</h3>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Spesial 1</b>
     </div>
     <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000 anggota maka Anda mendapatkan Bonus Spesial 1 yaitu Uang Rp 1 juta.</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Spesial 2</b>
     </div>
     <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000 anggota maka Anda mendapatkan Bonus Spesial 2 yaitu 1 unit Handphone atau Uang Rp 10 juta (bebas memilih).</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Spesial 3</b>
     </div>
     <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100.000 anggota maka Anda mendapatkan Bonus Spesial 3 yaitu Umroh Plus + uang saku 5 juta (untuk 1 orang) atau 1 Unit Motor Yamaha Nmax atau Uang Rp 40 juta (bebas memilih).</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Spesial 4</b>
     </div>
     <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000.000 anggota maka Anda mendapatkan Bonus Spesial 4 yaitu 1 unit Mobil Pajero atau Haji Plus untuk 2 orang + uang saku 40 juta atau Uang Rp 300 juta (bebas memilih).</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Spesial 5</b>
     </div>
     <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000.000 anggota maka Anda mendapatkan Bonus Spesial 5 yaitu 1 Unit Rumah Mewah atau Uang Rp 3 Milyar (bebas memilih).</p>
     <p></p>
     <h3 style="text-align: center;">❇️ BONUS TAMBAHAN</h3>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Tambahan 1</b>
     </div>
     <p>Jika anggota Anda di Generasi ke 1 berjumlah 5 anggota maka Anda mendapatkan Bonus Tambahan 1 yaitu Akses 3 Ebook Gratis (Seharga ±Rp 250.000,-), lihat di daftar Ebook Bonus cara penarikannya.</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div class="bonus-box">
       <b>Bonus Tambahan 2</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 1 berjumlah 10 anggota maka Anda mendapatkan Bonus Tambahan 2 yaitu Akses 3 Ebook Gratis lagi (Seharga ±Rp 250.000,-). lihat di daftar Ebook Bonus cara penarikannya.</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 1 berjumlah 10 anggota maka Anda mendapatkan Bonus Tambahan 2 yaitu Akses 3 Ebook Gratis lagi (Seharga ±Rp 250.000,-), lihat di daftar Ebook Bonus cara penarikannya.</p>
+    <div class="bonus-box">
       <b>Bonus Tambahan 3</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100 anggota maka Anda mendapatkan Bonus Tambahan 3 yaitu Akses Kursus atau Pembelajaran Online (Senilai Rp 350.000,-), Lihat di daftar kursus cara penarikannya.</p>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100 anggota maka Anda mendapatkan Bonus Tambahan 3 yaitu Akses Kursus atau Pembelajaran Online (Senilai Rp 350.000,-), lihat di daftar kursus cara penarikannya.</p>
     <br>
     <h3 style="text-align: center;">❇️ BONUS CUMA-CUMA</h3>
     <p>Bagi semua Anggota Basic yang membeli Produk SAF (upgrade menjadi anggota Premium) sebelum 3 hari daftar di SAF, akan mendapatkan Bonus Cuma-cuma yaitu:</p>
@@ -239,6 +250,7 @@
     <p>❌️ Jika Anda telah melewati batas promo 3 hari namun ingin mendapatkan semua Bonus Cuma-cuma, bonus dapat dibeli dengan harga diskon Rp 50.000,- (tanpa Ebook) dalam promo 10 hari. Setelah 10 hari, harga menjadi standar (tetap ada diskon Rp 499.000,-). Klik tombol di bawah ini:</p>
     <p><a href="https://Wa.me/6289522704503?text=Hallo%20Admin%20SAFF%20saya%20ingin%20membeli%20Bonus%20Cuma-cuma%20harga%20diskon%20Rp%2050.000,-%20sebelum%2010%20hari.%20Bagaimana%20caranya?" class="button">👉 BELI BONUS CUMA-CUMA</a></p>
   </div>
+  <br>
     <a href="https://SAFF35.github.io/Dashboard" class="button"><b>KEMBALI KE HOME</b></a>
   <!-- Footer -->
   <br>
