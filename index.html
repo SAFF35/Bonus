@@ -38,7 +38,8 @@
       gap: 10px;
       background: linear-gradient(to bottom, #84D1CC, #20B2AA);
       padding: 2px;
-      border: 0;
+      /* Menghilangkan border */
+      border: none;
       position: sticky;
       top: 61px;
       z-index: 700;
@@ -47,7 +48,6 @@
     nav a {
       display: block;
       background: linear-gradient(to bottom, #84D1CC, #20B2AA);
-      /* Border dihilangkan sesuai permintaan */
       border: none;
       padding: 2px 10px;
       color: #0000CD;
@@ -100,16 +100,15 @@
       max-width: 90%;
       margin: 30px auto;
       padding: 20px;
-      background-color: #F0E68C;
+      background-color: #FFFFFF;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       font-weight: bold;
-      color: #F0FFFF;
+      color: #000;
       line-height: 1.8;
       text-align: justify;
     }
 
-    /* Atur margin & padding paragraf dalam container */
     .content p {
       margin: 10px 0;
       padding: 0 10px;
@@ -123,7 +122,7 @@
     }
 
     h4 {
-      font-size: 1.3em; /* Sesuai permintaan (1.3em) */
+      font-size: 1.3em;
       font-weight: bold;
       color: #000;
       text-align: center;
@@ -134,9 +133,9 @@
       color: #000;
     }
 
-    /* Tombol: posisi di tengah dan animasi berkedip */
+    /* Tombol: tidak terlalu lebar, menyesuaikan isi teks, di tengah, dan animasi berkedip */
     .button {
-      display: block;
+      display: inline-block;
       padding: 7px 12px;
       margin: 5px auto;
       color: #000;
@@ -148,9 +147,10 @@
     }
 
     @keyframes blink {
-      0% { background-color: skyblue; }
-      50% { background-color: lightgreen; }
-      100% { background-color: skyblue; }
+      0% { background-color: #800080; }   /* Ungu */
+      33% { background-color: #0000FF; }   /* Biru */
+      66% { background-color: #008000; }   /* Hijau */
+      100% { background-color: #800080; }  /* Kembali ke Ungu */
     }
 
     /* Style tambahan untuk h4 footer agar tidak rapat dengan pinggir layar */
@@ -163,7 +163,7 @@
 
   <style>
     body, p, h1, h2, h3, h4, h5, h6, div, span, ul, li, button {
-      /* tidak ada tambahan */
+      /* Tidak ada tambahan */
     }
   </style>
 </head>
@@ -188,44 +188,44 @@
   <!-- Konten tambahan: Informasi Pencairan Komisi & Bonus serta Bonus Detail -->
   <div class="content">
       <p>Untuk Pencairan Komisi dan Penarikan Bonus bisa melalui Rekening Bank atau Ewallet (Dana, Ovo, Shopee Pay dll) dan bagi yang belum memilikinya bisa melalui Rekening Bank atau Ewallet teman/saudara atau melalui konter yang menerima transfer &amp; pencairan.</p>
-      <p></p>
+      <br>
     
     <h3 style="text-align: center;">❇️ BONUS SPESIAL</h3>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 136px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Spesial 1</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000 anggota maka Anda mendapatkan Bonus Spesial 1 yaitu Uang Rp 1 juta. PENARIKAN BONUS SPESIAL 1 KLIK TOMBOL DI BAWAH INI:</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 136px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000 anggota maka Anda mendapatkan Bonus Spesial 1 yaitu Uang Rp 1 juta.</p>
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Spesial 2</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000 anggota maka Anda mendapatkan Bonus Spesial 2 yaitu 1 unit Handphone atau Uang Rp 10 juta (bebas memilih). PENARIKAN BONUS SPESIAL 2 KLIK TOMBOL DI BAWAH INI:</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 136px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000 anggota maka Anda mendapatkan Bonus Spesial 2 yaitu 1 unit Handphone atau Uang Rp 10 juta (bebas memilih).</p>
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Spesial 3</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100.000 anggota maka Anda mendapatkan Bonus Spesial 3 yaitu Umroh Plus + uang saku 5 juta (untuk 1 orang) atau 1 Unit Motor Yamaha Nmax atau Uang Rp 40 juta (bebas memilih). PENARIKAN BONUS SPESIAL 3 KLIK TOMBOL DI BAWAH INI:</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 136px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100.000 anggota maka Anda mendapatkan Bonus Spesial 3 yaitu Umroh Plus + uang saku 5 juta (untuk 1 orang) atau 1 Unit Motor Yamaha Nmax atau Uang Rp 40 juta (bebas memilih).</p>
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Spesial 4</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000.000 anggota maka Anda mendapatkan Bonus Spesial 4 yaitu 1 unit Mobil Pajero atau Haji Plus untuk 2 orang + uang saku 40 juta atau Uang Rp 300 juta (bebas memilih). PENARIKAN BONUS SPESIAL 4 KLIK TOMBOL DI BAWAH INI:</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 136px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000.000 anggota maka Anda mendapatkan Bonus Spesial 4 yaitu 1 unit Mobil Pajero atau Haji Plus untuk 2 orang + uang saku 40 juta atau Uang Rp 300 juta (bebas memilih).</p>
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Spesial 5</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000.000 anggota maka Anda mendapatkan Bonus Spesial 5 yaitu 1 Unit Rumah Mewah atau Uang Rp 3 Milyar (bebas memilih). PENARIKAN BONUS SPESIAL 5 KLIK TOMBOL DI BAWAH INI:</p>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000.000 anggota maka Anda mendapatkan Bonus Spesial 5 yaitu 1 Unit Rumah Mewah atau Uang Rp 3 Milyar (bebas memilih).</p>
     <p></p>
     <h3 style="text-align: center;">❇️ BONUS TAMBAHAN</h3>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 160px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Tambahan 1</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 1 berjumlah 5 anggota maka Anda mendapatkan Bonus Tambahan 1 yaitu Akses 3 Ebook Gratis (Seharga ±Rp 250.000,-). Lihat daftar Ebook &amp; cara pengambilannya. Klik tombol di bawah ini:</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 160px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 1 berjumlah 5 anggota maka Anda mendapatkan Bonus Tambahan 1 yaitu Akses 3 Ebook Gratis (Seharga ±Rp 250.000,-), lihat di daftar Ebook Bonus cara penarikannya.</p>
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Tambahan 2</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 1 berjumlah 10 anggota maka Anda mendapatkan Bonus Tambahan 2 yaitu Akses 3 Ebook Gratis lagi (Seharga ±Rp 250.000,-). Lihat daftar Ebook &amp; cara pengambilannya. Klik tombol di bawah ini:</p>
-    <div style="border: 2px solid #1E90FF; padding: 7px; width: 160px; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
+    <p>Jika anggota Anda di Generasi ke 1 berjumlah 10 anggota maka Anda mendapatkan Bonus Tambahan 2 yaitu Akses 3 Ebook Gratis lagi (Seharga ±Rp 250.000,-). lihat di daftar Ebook Bonus cara penarikannya.</p>
+    <div style="border: 2px solid #1E90FF; padding: 7px; width: auto; margin: 0 auto; text-align: center; color: #000; background: linear-gradient(90deg, #87CEEB, #ffffff); border-radius: 10px;">
       <b>Bonus Tambahan 3</b>
     </div>
-    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100 anggota maka Anda mendapatkan Bonus Tambahan 3 yaitu Akses Kursus atau Pembelajaran Online (Senilai Rp 350.000,-). Lihat daftar kursus &amp; cara pengambilan akses bonus. Klik tombol di bawah ini:</p>
-    <p></p>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100 anggota maka Anda mendapatkan Bonus Tambahan 3 yaitu Akses Kursus atau Pembelajaran Online (Senilai Rp 350.000,-), Lihat di daftar kursus cara penarikannya.</p>
+    <br>
     <h3 style="text-align: center;">❇️ BONUS CUMA-CUMA</h3>
     <p>Bagi semua Anggota Basic yang membeli Produk SAF (upgrade menjadi anggota Premium) sebelum 3 hari daftar di SAF, akan mendapatkan Bonus Cuma-cuma yaitu:</p>
     <p>📢 Gratis Website Replika Promosi premium seharga Rp 500.000,-. Website ini memudahkan promosi dengan terhubung langsung ke link referral dan nomor WhatsApp Anda. Setelah 3 hari, bonus ini akan berubah menjadi website replika umum.</p>
@@ -246,6 +246,6 @@
   <h4 class="footer-h4"><b>Salam sukses untuk semuanya.</b></h4>
   
   <br>
-  <p>__________________</p>
+  <h4>__________________</h4>
 </body>
 </html>
